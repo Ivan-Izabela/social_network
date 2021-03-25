@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MesajeController">
+   <children>
+      <TableView fx:id="tableViewMesaje" layoutX="32.0" layoutY="47.0" prefHeight="200.0" prefWidth="153.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNumeMesaj" prefWidth="75.0" text="Nume" />
+          <TableColumn fx:id="tableColumnPrenumeMesaj" prefWidth="75.0" text="Prenume" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="textAreaChat" layoutX="213.0" layoutY="47.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="39.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleShowConversation" text="Show Conversation" />
+      <TextField fx:id="textFieldMesaj" layoutX="213.0" layoutY="261.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="378.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleSendMessage" text="Send Message" />
+      <TextField fx:id="textFieldUser" layoutX="213.0" layoutY="14.0" />
+   </children>
+</AnchorPane>

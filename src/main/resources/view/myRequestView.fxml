@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyRequestController">
+   <children>
+      <TableView fx:id="tableViewMyRequest" layoutX="50.0" layoutY="41.0" prefHeight="200.0" prefWidth="153.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNumeMyRequest" prefWidth="75.0" text="Nume" />
+          <TableColumn fx:id="tableColumnPrenumeMyRequest" prefWidth="75.0" text="Prenume" />
+        </columns>
+      </TableView>
+      <Button layoutX="63.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleDeleteRequest" text="Delete Request" />
+   </children>
+</AnchorPane>

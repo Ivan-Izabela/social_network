@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendRequestController">
+   <children>
+      <Button layoutX="38.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleAccept" text="Accept" />
+      <Button layoutX="119.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleReject" text="Reject" />
+      <TableView fx:id="tableViewR" layoutX="21.0" layoutY="40.0" prefHeight="200.0" prefWidth="153.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNumeR" prefWidth="75.0" text="Nume" />
+          <TableColumn fx:id="tableColumnPrenumeR" prefWidth="75.0" text="Prenume" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldStatus" layoutX="213.0" layoutY="75.0" />
+      <TextField fx:id="textFieldData" layoutX="213.0" layoutY="115.0" />
+      <Button layoutX="249.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleStatus" text="Status/Data" />
+   </children>
+</AnchorPane>
